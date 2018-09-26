@@ -1,12 +1,22 @@
 {
   "name": "samaritans-prototype-kit",
   "version": "1.0.0",
-  "description": "Samaritans Prototyping Kit =====================",
+  "description": "Samaritans Prototyping Kit",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/utils/server.js",
+    "dev": "nodemon src/utils/server.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "glob-slash": "^1.0.0",
+    "nunjucks": "^3.1.3",
+    "serve-handler": "^5.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  }
 }
