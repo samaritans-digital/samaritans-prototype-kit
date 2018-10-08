@@ -13,3 +13,23 @@ Get started
 Download a copy of this kit, and from a computer with `node` and `npm` installed, run the `npm install`.
 
 To serve the kit, run `npm start`. You will be able to visit the prototypes at `localhost:3000` in your browser.
+
+To do
+-----
+
+Many UI elements need to be added before this will be useful
+
+* Grid system
+* Header with logo and nav
+* Footer with nav and info
+* Inset panel
+* Card/call-to-action
+* Alerts/badges (square and round)
+* Buttons and inline links
+* Headings
+* Paragraph text
+* Text input
+* Select input
+* Timeline/step-by-step UI
+* Big number/stat
+* Tabs
