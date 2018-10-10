@@ -12,9 +12,8 @@ nunjucks.configure('./src/views', {
 server.set('view engine', 'html');
 
 // Auto-render any view file that exists
-server.use("/:path", (req, res, next)=>{
+server.get(/^([^.]+)$/, function (req, res, next) {
   utils.matchRoutes(req, res, next)
-  // TODO: Can this be simplified with pure res.render(req.params.path)?
 })
 
 // Serve anything in the assets folder
