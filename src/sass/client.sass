@@ -15,6 +15,10 @@ body
 h1, h2, h3, h4, h5, p
     color: $darkgrey
 
+p
+    line-height: 1.5em
+    font-size: 1.05em
+    margin-bottom: 25px
 p a
     color: $darkblue
 
@@ -35,6 +39,12 @@ p a
     margin: 0px auto
 
 // Header
+
+.site-header--dark
+    background-color: $darkblue
+    .site-header__service-name
+        color: white
+
 .site-header__masthead
     padding: 20px 0px
 
@@ -110,11 +120,12 @@ p a
 // Phase banner
 .phase-banner
     background-color: $offwhite
-    padding: 1px
+    padding: 15px 0px 12px 0px
 
 .phase-banner__message
     color: $darkgrey
     display: flex
+    margin: 0px
 
 .phase-banner__tag
     background-color: $lightblue
@@ -194,17 +205,18 @@ p a
     display: inline-block
     text-decoration: none
     color: white
-    padding: 10px 15px
+    font-size: 1.1em
+    padding: 12px 16px
     font-weight: bold
     margin-right: 10px
-    margin-bottom: 20px
+    margin-bottom: 25px
 
 .button--start
     &::before
         font-family: "Font Awesome 5 Free"
         content: '\f054'
         font-weight: 900
-        margin-right: 7px
+        margin-right: 10px
         font-size: 0.8em
         opacity: 0.75
 
@@ -220,7 +232,7 @@ p a
 .page-title
     font-size: 2.2em
     margin: 0px 0px 50px 0px
-    opacity: 0.75
+    // opacity: 0.75
     color: $darkgrey
     @media (min-width: 800px)
         font-size: 2.7em
@@ -237,21 +249,21 @@ p a
 
 // Grid helper classes
 .grid-2-columns
-    margin-bottom: 20px
+    margin-bottom: 25px
     @media (min-width: 700px)
         display: grid
         grid-template-columns: 1fr 1fr
         grid-column-gap: 30px
 
 .grid-3-columns
-    margin-bottom: 20px
+    margin-bottom: 25px
     @media (min-width: 700px)
         display: grid
         grid-template-columns: 1fr 1fr 1fr
         grid-column-gap: 30px
 
 .grid-4-columns
-    margin-bottom: 20px
+    margin-bottom: 25px
     @media (min-width: 700px)
         display: grid
         grid-template-columns: 1fr 1fr 1fr 1fr
@@ -264,7 +276,7 @@ p a
 // Cards
 .card
     background-color: $offwhite
-    margin-bottom: 20px
+    margin-bottom: 25px
 
 .card__image
     width: 100%
@@ -290,7 +302,7 @@ p a
 // Accordion
 
 .accordion
-    margin-bottom: 20px
+    margin-bottom: 25px
 
 .accordion__item
     border: 1px solid darken($offwhite, 5)
@@ -339,7 +351,7 @@ p a
 
 // Download
 .download
-    margin-bottom: 20px
+    margin-bottom: 25px
     border: 1px solid darken($offwhite, 5)
     padding: 15px
     padding-left: 65px
@@ -375,12 +387,12 @@ p a
     font-size: 0.9em
 
 
-// Inset box
-.inset
+// Panel/inset box
+.panel
     border: 1px solid darken($offwhite, 5)
     padding: 15px
     background-color: $offwhite
-    margin-bottom: 20px
+    margin-bottom: 25px
 
 
 // Pagination
@@ -392,7 +404,7 @@ p a
     flex-direction: row
     justify-content: space-between
     font-weight: bold
-    margin-bottom: 20px
+    margin-bottom: 25px
 
 .pagination__numbers
     display: none
@@ -433,11 +445,11 @@ p a
         margin-left: 10px
         color: $coregreen
 
-// Blockquote
-.blockquote
+// Inset/blockquote
+.inset
     margin: 30px 0px
-    border-left: 7px solid $darkgrey
-    padding: 15px
+    border-left: 8px solid $darkgrey
+    padding: 12px 25px
     p
-        margin: 0
+        margin-bottom: 0px
 
