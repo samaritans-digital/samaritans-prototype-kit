@@ -157,15 +157,14 @@ p a
 
 // Main content area
 .content
-    padding-top: 30px
-    padding-bottom: 30px
+    margin: 50px auto
 
 
 // Breadcrumbs
 .breadcrumbs
     padding: 0
     list-style: none
-    margin-bottom: 20px
+    margin-bottom: 50px
 
 .breadcrumbs__list-item
     display: inline-block
@@ -209,12 +208,23 @@ p a
         font-size: 0.8em
         opacity: 0.75
 
+
+// Page context above heading
+.page-context
+    font-size: 1.25em
+    opacity: 0.5
+    margin-bottom: 5px
+
+
 // Page title
 .page-title
     font-size: 2.2em
-    margin: 50px 0px
+    margin: 0px 0px 50px 0px
     opacity: 0.75
     color: $darkgrey
+    @media (min-width: 800px)
+        font-size: 2.7em
+
 
 // Lede
 .lede
@@ -223,6 +233,7 @@ p a
     opacity: 0.75
     font-weight: bold
     color: $darkgrey
+
 
 // Grid helper classes
 .grid-2-columns
@@ -306,7 +317,7 @@ p a
     flex-direction: row
     justify-content: flex-end
     align-items: center
-    margin: 40px 0px
+    margin: 50px 0px 0px 0px
 
 .useful-page__message
     margin-right: 10px
@@ -375,7 +386,7 @@ p a
 // Pagination
 .pagination
     border-top: 1px solid darken($offwhite, 5)
-    margin-top: 40px
+    margin-top: 50px
     padding-top: 20px
     display: flex
     flex-direction: row
@@ -421,3 +432,12 @@ p a
         font-weight: 900
         margin-left: 10px
         color: $coregreen
+
+// Blockquote
+.blockquote
+    margin: 30px 0px
+    border-left: 7px solid $darkgrey
+    padding: 15px
+    p
+        margin: 0
+
