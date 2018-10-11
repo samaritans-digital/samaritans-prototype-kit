@@ -1,0 +1,98 @@
+{% extends '_layout.html' %}
+{% block content %}
+
+<ul class="breadcrumbs">
+    <li class="breadcrumbs__list-item"><a href="/" class="breadcrumbs__link"><i class="fas fa-home"></i></a></li>
+    <li class="breadcrumbs__list-item"><a href="#" class="breadcrumbs__link">Support and information</a></li>
+    <li class="breadcrumbs__list-item">If you're having a difficult time</li>
+</ul>
+
+<h1 class="page-title">Running a branch</h1>
+
+<div class="grid-3-columns">
+    <article class="main-content">
+        <p class="lede">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et risus mauris. Vestibulum efficitur ante a mauris condimentum, at vestibulum urna varius. Proin sit amet nisi ut sem euismod tincidunt vel vitae dui.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et risus mauris. Vestibulum efficitur ante a mauris condimentum, at vestibulum urna varius. Proin sit amet nisi ut sem euismod tincidunt vel vitae dui.</p>
+    </article>
+    <aside>
+        <h2>Sidebar title</h2>
+        <p>Sidebar content</p>
+    </aside>
+</div>
+
+<div class="inset">
+    <h2>Inset box</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et risus mauris.</p>
+</div>
+
+<div class="accordion">
+    <details class="accordion__item">
+        <summary class="accordion__summary"><h4 class="accordion__title">Lacking energy or feeling tired</h4></summary>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et risus mauris.</p> 
+    </details>
+    <details class="accordion__item">
+        <summary class="accordion__summary"><h4 class="accordion__title">Feeling restless or agitated</h4></summary>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et risus mauris.</p>
+    </details>
+</div>
+
+<div class="download">
+    <a class="download__link" href="#">Full list of Samaritans branches</a>
+    <p class="download__details">182kb - PDF</p>
+</div>
+
+<div class="grid-3-columns">
+    <div class="card">
+        <img class="card__image" src="http://placehold.it/300x200"/>
+        <a class="card__link" href="#">
+            <h3 class="card__title">Page title</h3>
+            <p class="card__description">All about service on that page</p>
+        </a>
+    </div>
+    <div class="card">
+        <img class="card__image" src="http://placehold.it/300x200"/>
+        <a class="card__link" href="#">
+            <h3 class="card__title">Page title</h3>
+            <p class="card__description">All about service on that page</p>
+        </a>
+    </div>
+    <div class="card">
+        <img class="card__image" src="http://placehold.it/300x200"/>
+        <a class="card__link" href="#">
+            <h3 class="card__title">Page title</h3>
+            <p class="card__description">All about service on that page</p>
+        </a>
+    </div>
+</div>
+
+
+<a href="#" class="button">
+    Start now
+</a>
+
+<a href="#" class="button button--start">
+    Start now
+</a>
+
+
+<section class="pagination">
+    <a class="pagination__previous" href="#" >Previous page</a>
+    <ul class="pagination__numbers">
+        <li><span  href="#" class="pagination__number pagination__number--current">1</span></li>
+        <li><a  href="#" class="pagination__number">2</a></li>
+        <li><a  href="#" class="pagination__number">3</a></li>
+        <li><a  href="#" class="pagination__number">4</a></li>
+        ...
+    </ul>
+    <a class="pagination__next" href="#" >Next page</a>
+</section>
+
+<section class="useful-page">
+        <p class="useful-page__message">Was this page useful?</p>
+        <form class="useful-page__buttons">
+            <button class="useful-page__button" type="submit">Yes</button>
+            <button class="useful-page__button" type="submit">No</button>
+        </form>
+    </section>
+
+{% endblock %}
