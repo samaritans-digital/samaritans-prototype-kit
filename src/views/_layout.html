@@ -6,6 +6,7 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="client.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="custom.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
  
@@ -16,7 +17,7 @@
         <div class="site-header__masthead">
             <div class="container">
                     <a class="site-header__logo-holder" href="/">
-                        <h1 class="site-header__service-name">Service name here</h1>
+                        <span class="site-header__service-name">Samaritans people</span>
                     </a>
             </div>
         </div>
@@ -46,23 +47,27 @@
     <main class="content container">
             {% block content %}
             {% endblock %}
+            <section class="useful-page">
+                <p class="useful-page__message">Was this page useful?</p>
+                <form class="useful-page__buttons">
+                    <button class="useful-page__button" type="submit">Yes</button>
+                    <button class="useful-page__button" type="submit">No</button>
+                </form>
+            </section>
     </main>
 
     <footer class="site-footer">
         <div class="container">
-        
-        <ul class="site-footer__menu">
-            <li><a href="#" class="site-footer__menu-link">News</a></li>
-            <li><a href="#" class="site-footer__menu-link">Accessibility</a></li>
-            <li><a href="#" class="site-footer__menu-link">Feedback</a></li>
-            <li><a href="#" class="site-footer__menu-link">Privacy policy</a></li>
-            <li><a href="#" class="site-footer__menu-link">Legal</a></li>
-        </ul>
-        
-        <p class="site-footer__legal">
+            <ul class="site-footer__menu">
+                <li><a href="#" class="site-footer__menu-link">News</a></li>
+                <li><a href="#" class="site-footer__menu-link">Accessibility</a></li>
+                <li><a href="#" class="site-footer__menu-link">Feedback</a></li>
+                <li><a href="#" class="site-footer__menu-link">Privacy policy</a></li>
+                <li><a href="#" class="site-footer__menu-link">Legal</a></li>
+            </ul>
+            <p class="site-footer__legal">
                 Samaritans is a charity registered in England and Wales (219432) and in Scotland (SC040604) and incorporated in England and Wales as a company limited by guarantee (757372). Samaritans Ireland is a charity registered in the Republic of Ireland (20033668) and incorporated in the Republic of Ireland as a company limited by guarantee (450409). Samaritans in Scotland is a charity registered in Scotland (SC009843) and incorporated as a Scottish Charitable Incorporated Organisation.
-        </p>
-
+            </p>
         </div>
     </footer>
 </body>

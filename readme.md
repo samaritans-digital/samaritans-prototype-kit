@@ -19,15 +19,15 @@ To do
 
 Many UI elements need to be added before this will be useful
 
-* Grid system
-* Header with logo and nav
-* Footer with nav and info
+* ~Grid system~
+* ~Header with logo and nav~
+* ~Footer with nav and info~
+* ~Buttons and inline links~
+* ~Headings~
+* ~Paragraph text~
 * Inset panel
-* Card/call-to-action
+* ~Card/call-to-action~
 * Alerts/badges (square and round)
-* Buttons and inline links
-* Headings
-* Paragraph text
 * Text input
 * Select input
 * Timeline/step-by-step UI
