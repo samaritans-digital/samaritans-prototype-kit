@@ -6,13 +6,65 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="client.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+ 
     <script src="client.js"></script>
 </head>
 <body>
-    <header>Header</header>
-    {% block content %}
-    {% endblock %}
-    <footer>Footer</footer>
+    <header class="site-header">
+        <div class="site-header__masthead">
+            <div class="container">
+                    <a class="site-header__logo-holder" href="/">
+                        <h1 class="site-header__service-name">Service name here</h1>
+                    </a>
+            </div>
+        </div>
+        <nav class="site-header__nav">
+            <div class="container site-header__nav-inner">
+                <ul class="side-header__menu-list">
+                    <li><a class="site-header__menu-link" href="/"><i class="fas fa-home"></i><span class="visually-hidden">Home</span></a></li>
+                    <li><a class="site-header__menu-link" href="#">How we can help<i class="fas fa-chevron-down site-header__icon"></i></a></li>
+                    <li><a class="site-header__menu-link" href="#">Support us<i class="fas fa-chevron-down site-header__icon"></i></a></li>
+                </ul>
+    
+                <form action="/results" class="search-form">
+                    <label for="query" class="visually-hidden">Your search query</label>
+                    <input class="search-form__query" id="query" type="text" placeholder="Search for people..."/>
+                    <button class="search-form__submit" type="submit"><i class="fas fa-search"></i><span class="visually-hidden">Search</span></button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <div class="phase-banner">
+        <div class="container">
+            <p class="phase-banner__message"><strong class="phase-banner__tag">Prototype</strong>This is a prototype of a brand new service.</p>
+        </div>
+    </div>
+
+    <main class="content container">
+            {% block content %}
+            {% endblock %}
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+        
+        <ul class="site-footer__menu">
+            <li><a href="#" class="site-footer__menu-link">News</a></li>
+            <li><a href="#" class="site-footer__menu-link">Accessibility</a></li>
+            <li><a href="#" class="site-footer__menu-link">Feedback</a></li>
+            <li><a href="#" class="site-footer__menu-link">Privacy policy</a></li>
+            <li><a href="#" class="site-footer__menu-link">Legal</a></li>
+        </ul>
+        
+        <p class="site-footer__legal">
+                Samaritans is a charity registered in England and Wales (219432) and in Scotland (SC040604) and incorporated in England and Wales as a company limited by guarantee (757372). Samaritans Ireland is a charity registered in the Republic of Ireland (20033668) and incorporated in the Republic of Ireland as a company limited by guarantee (450409). Samaritans in Scotland is a charity registered in Scotland (SC009843) and incorporated as a Scottish Charitable Incorporated Organisation.
+        </p>
+
+        </div>
+    </footer>
 </body>
 </html>
 

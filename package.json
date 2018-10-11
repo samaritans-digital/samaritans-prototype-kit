@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/utils/server.js",
-    "dev": "./node_modules/nodemon/bin/nodemon.js src/utils/server.js"
+    "dev": "nodemon src/utils/server.js && gulp",
+    "build": "gulp"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +17,8 @@
     "nunjucks": "^3.1.3"
   },
   "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1",
     "nodemon": "^1.18.4"
   }
 }

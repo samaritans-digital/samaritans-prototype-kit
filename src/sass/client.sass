@@ -1,0 +1,154 @@
+// Colour scheme
+$offwhite: #f4f7f8
+$darkblue: #255f6d
+$darkgrey: #0f2522
+$coregreen: #84bd00
+    
+body
+    margin: 0
+    font-family: sans-serif
+    box-sizing: border-box
+
+// Invisible on screen but still read by screen readers
+.visually-hidden
+    position: absolute
+    left: -9999em
+    top: auto
+    width: 1px
+    height: 1px
+    overflow: hidden
+
+// Fixed width container
+.container
+    max-width: 1000px
+    padding: 0px 10px
+    margin: 0px auto
+
+// Header
+
+.site-header__masthead
+    padding: 20px 0px
+
+.site-header__logo-holder
+    text-decoration: none
+
+.site-header__logo
+    max-width: 200px
+
+.site-header__service-name
+    margin: 0px
+
+.site-header__nav
+    background-color: $darkblue
+    padding: 10px 0px
+
+.site-header__nav-inner
+    @media (min-width: 600px)
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+
+.side-header__menu-list
+    list-style: none
+    padding: 0
+    margin: 0
+    
+    @media (min-width: 600px)
+        flex: 1
+        display: flex
+        flex-direction: row
+
+.site-header__menu-link
+    color: $offwhite
+    text-decoration: none
+    font-weight: bold
+    display: inline-block
+    margin-bottom: 10px
+    @media (min-width: 600px)   
+        margin-bottom: 0px
+        padding-right: 15px
+        margin-right: 15px
+        border-right: 2px solid lighten($darkblue, 5)
+
+.site-header__icon
+    margin-left: 10px
+
+.site-header__service-name
+    color: $darkgrey
+
+// Search form
+.search-form
+    position: relative
+    width: 100%
+    @media (min-width: 600px)  
+        max-width: 200px
+.search-form__query
+    border: 0
+    border-radius: 4px
+    padding: 7px
+    font-size: 0.9em
+    width: calc(100% - 12px)
+
+.search-form__submit
+    border: 0
+    background: none
+    position: absolute
+    right: 0
+    top: 7px
+    color: $coregreen
+
+// Phase banner
+.phase-banner
+    background-color: $offwhite
+    padding: 1px
+
+.phase-banner__message
+    color: $darkgrey
+    display: flex
+
+.phase-banner__tag
+    background-color: lighten($darkblue, 10)
+    // text-transform: uppercase
+    color: $offwhite
+    display: inline-block
+    padding: 2px 5px
+    margin-right: 10px
+    font-size: 0.95em
+    align-self: flex-start
+    transform: translateY(-2px)
+
+
+// Footer
+.site-footer
+    background-color: $offwhite
+    padding: 20px 0px
+
+.site-footer__menu
+    list-style: none
+    padding: 0
+    display: grid
+    margin-bottom: 30px
+    grid-row-gap: 10px
+    @media (min-width: 300px)
+        grid-template-columns: 1fr 1fr
+    @media (min-width: 600px)
+        max-width: 50%
+
+.site-footer__menu-link
+    color: $darkblue
+    text-decoration: none
+    &:hover
+        text-decoration: underline
+
+.site-footer__legal
+    font-size: 0.8em
+    opacity: 0.75
+    color: $darkblue
+    line-height: 1.5em
+
+// Main content area
+.content
+    padding-top: 30px
+    padding-bottom: 30px
+
